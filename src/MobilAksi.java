@@ -32,5 +32,9 @@ public class MobilAksi {
         System.out.print("Harga             \t: ");
         System.out.println(S.getHarga());
         System.out.println("\n");
+
+        M.diskon();
+        System.out.println("Total Membeli 2 Mobil : Rp " + (M.harga + S.harga));
+        S.infodiskon();
     }
 }

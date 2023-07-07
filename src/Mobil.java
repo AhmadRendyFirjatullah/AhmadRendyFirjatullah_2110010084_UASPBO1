@@ -44,4 +44,3 @@ public class Mobil {
         this.harga = harga;
     }
 }
-}
