@@ -1,40 +1,48 @@
 public class MobilAksi {
     public static void main(String[] args) {
-        Mobil M = new Mobil();
+        Mobil Baru = new Mobil();
 
-        M.namamobil      = "AGYA";
-        M.warna          = "Silver";
-        M.tahunpembuatan = 2018;
-        M.kondisi        = "Baru";
-        M.harga          = 20000000;
-        System.out.println("Nama Mobil      : " + M.namamobil);
-        System.out.println("Warna           : " + M.warna);
-        System.out.println("Tahun Pembuatan : " + M.tahunpembuatan);
-        System.out.println("Kondisi         : " + M.kondisi);
-        System.out.println("Harga           : Rp " + M.harga);
+        Baru.namamobil      = "AGYA";
+        Baru.warna          = "Silver";
+        Baru.tahunpembuatan = 2018;
+        Baru.kondisi        = "Baru";
+        Baru.harga          = 20000000;
+        System.out.println("=======================================");
+        System.out.println("\tDETAIL PEMBELIAN MOBIL BARU");
+        System.out.println("=======================================");
+        System.out.println("1.Nama Mobil        : " + Baru.namamobil);
+        System.out.println("  Warna             : " + Baru.warna);
+        System.out.println("  Tahun Pembuatan   : " + Baru.tahunpembuatan);
+        System.out.println("  Kondisi           : " + Baru.kondisi);
+        System.out.println("  Harga             : Rp " + Baru.harga);
+        System.out.println("=======================================");
 
         //Hasil dari Getter and Setter
-        Mobil S = new Mobil();
+        Mobil Bekas = new Mobil();
 
-        S.namamobil      = "AVANZA";
-        S.warna          = "Black";
-        S.tahunpembuatan = 2015;
-        S.kondisi        = "Baru";
-        S.harga          = 15000000;
-        System.out.print("Nama Mobil        \t: ");
-        System.out.println(S.getNamamobil());
-        System.out.print("Warnanya          \t: ");
-        System.out.println(S.getWarna());
-        System.out.print("Tahun Pembuatan   \t: ");
-        System.out.println(S.getTahunpembuatan());
-        System.out.print("Kondisi           \t: ");
-        System.out.println(S.getKondisi());
-        System.out.print("Harga             \t: ");
-        System.out.println(S.getHarga());
-        System.out.println("\n");
+        Bekas.namamobil      = "AVANZA";
+        Bekas.warna          = "Black";
+        Bekas.tahunpembuatan = 2015;
+        Bekas.kondisi        = "Bekas";
+        Bekas.harga          = 15000000;
+        System.out.println("=======================================");
+        System.out.println("\tDETAIL PEMBELIAN MOBIL BEKAS");
+        System.out.println("=======================================");
+        System.out.print("2.Nama Mobil       \t: ");
+        System.out.println(Bekas.getNamamobil());
+        System.out.print("  Warnanya         \t: ");
+        System.out.println(Bekas.getWarna());
+        System.out.print("  Tahun Pembuatan  \t: ");
+        System.out.println(Bekas.getTahunpembuatan());
+        System.out.print("  Kondisi          \t: ");
+        System.out.println(Bekas.getKondisi());
+        System.out.print("  Harga            \t: ");
+        System.out.println(Bekas.getHarga());
+        System.out.println("=======================================");
 
-        M.diskon();
-        System.out.println("Total Membeli 2 Mobil : Rp " + (M.harga + S.harga));
-        S.infodiskon();
+        Baru.diskon();
+        System.out.println("Total Membeli 2 Mobil : Rp " + (Baru.harga + Bekas.harga));
+        Bekas.infodiskon();
+        System.out.println("=======================================");
     }
 }

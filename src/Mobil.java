@@ -9,7 +9,7 @@ public class Mobil {
         this.harga = this.harga - 1000000;
     }
     void infodiskon() {
-        System.out.println("Selamat Anda Mendapatkan Diskon");
+        System.out.println("  Selamat Anda Mendapatkan Diskon");
     }
 
     //Getter and Setter
