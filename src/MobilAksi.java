@@ -1,48 +1,49 @@
 public class MobilAksi {
     public static void main(String[] args) {
-        Mobil Baru = new Mobil();
+        Mobil Avanza = new Mobil();
 
-        Baru.namamobil      = "AGYA";
-        Baru.warna          = "Silver";
-        Baru.tahunpembuatan = 2018;
-        Baru.kondisi        = "Baru";
-        Baru.harga          = 20000000;
-        System.out.println("=======================================");
-        System.out.println("\tDETAIL PEMBELIAN MOBIL BARU");
-        System.out.println("=======================================");
-        System.out.println("1.Nama Mobil        : " + Baru.namamobil);
-        System.out.println("  Warna             : " + Baru.warna);
-        System.out.println("  Tahun Pembuatan   : " + Baru.tahunpembuatan);
-        System.out.println("  Kondisi           : " + Baru.kondisi);
-        System.out.println("  Harga             : Rp " + Baru.harga);
-        System.out.println("=======================================");
+        Avanza.namapembeli    = "Ahmad";
+        Avanza.warna          = "Silver";
+        Avanza.tahunpembuatan = 2018;
+        Avanza.kondisi        = "Baru";
+        Avanza.harga          = 20000000;
+        System.out.println("===========================================================");
+        System.out.println("\t\t\t\tDETAIL PEMBELIAN MOBIL BARU");
+        System.out.println("===========================================================");
+        System.out.println("1.Nama Pembeli      : " + Avanza.namapembeli);
+        System.out.println("  Warna             : " + Avanza.warna);
+        System.out.println("  Tahun Pembuatan   : " + Avanza.tahunpembuatan);
+        System.out.println("  Kondisi           : " + Avanza.kondisi);
+        System.out.println("  Harga             : Rp " + Avanza.harga);
+        System.out.println("===========================================================");
 
         //Hasil dari Getter and Setter
-        Mobil Bekas = new Mobil();
+        Mobil AGYA = new Mobil();
 
-        Bekas.namamobil      = "AVANZA";
-        Bekas.warna          = "Black";
-        Bekas.tahunpembuatan = 2015;
-        Bekas.kondisi        = "Bekas";
-        Bekas.harga          = 15000000;
-        System.out.println("=======================================");
-        System.out.println("\tDETAIL PEMBELIAN MOBIL BEKAS");
-        System.out.println("=======================================");
-        System.out.print("2.Nama Mobil       \t: ");
-        System.out.println(Bekas.getNamamobil());
+        AGYA.namapembeli    = "Rendy";
+        AGYA.warna          = "Black";
+        AGYA.tahunpembuatan = 2015;
+        AGYA.kondisi        = "Bekas";
+        AGYA.harga          = 15000000;
+        System.out.println("===========================================================");
+        System.out.println("\t\t\t\tDETAIL PEMBELIAN MOBIL BEKAS");
+        System.out.println("===========================================================");
+        System.out.print("2.Nama Pembeli     \t: ");
+        System.out.println(AGYA.getnamapembeli());
         System.out.print("  Warnanya         \t: ");
-        System.out.println(Bekas.getWarna());
+        System.out.println(AGYA.getWarna());
         System.out.print("  Tahun Pembuatan  \t: ");
-        System.out.println(Bekas.getTahunpembuatan());
+        System.out.println(AGYA.getTahunpembuatan());
         System.out.print("  Kondisi          \t: ");
-        System.out.println(Bekas.getKondisi());
+        System.out.println(AGYA.getKondisi());
         System.out.print("  Harga            \t: ");
-        System.out.println(Bekas.getHarga());
-        System.out.println("=======================================");
+        System.out.println(AGYA.getHarga());
+        System.out.println("===========================================================");
 
-        Baru.diskon();
-        System.out.println("Total Membeli 2 Mobil : Rp " + (Baru.harga + Bekas.harga));
-        Bekas.infodiskon();
-        System.out.println("=======================================");
+        Avanza.diskon();
+        AGYA.diskon();
+        System.out.println("Total Membeli 2 Mobil dengan diskon keduanya : Rp " + (Avanza.harga + AGYA.harga));
+        AGYA.infodiskon();
+        System.out.println("===========================================================");
     }
 }

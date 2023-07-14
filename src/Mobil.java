@@ -1,5 +1,5 @@
 public class Mobil {
-    String namamobil;
+    String namapembeli;
     String warna;
     int tahunpembuatan;
     String kondisi;
@@ -9,15 +9,15 @@ public class Mobil {
         this.harga = this.harga - 1000000;
     }
     void infodiskon() {
-        System.out.println("  Selamat Anda Mendapatkan Diskon");
+        System.out.println("\t\t\tSelamat Anda Mendapatkan Diskon");
     }
 
     //Getter and Setter
-    public String getNamamobil() {
-        return namamobil;
+    public String getnamapembeli() {
+        return namapembeli;
     }
-    public void setNamamobil(String namamobil) {
-        this.namamobil = namamobil;
+    public void setNamapembeli(String namapembeli) {
+        this.namapembeli = namapembeli;
     }
     public String getWarna() {
         return warna;
