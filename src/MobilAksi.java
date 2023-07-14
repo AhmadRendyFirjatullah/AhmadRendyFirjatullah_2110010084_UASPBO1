@@ -36,7 +36,7 @@ public class MobilAksi {
         System.out.println(AGYA.getTahunpembuatan());
         System.out.print("  Kondisi          \t: ");
         System.out.println(AGYA.getKondisi());
-        System.out.print("  Harga            \t: ");
+        System.out.print("  Harga            \t: Rp ");
         System.out.println(AGYA.getHarga());
         System.out.println("===========================================================");
 
